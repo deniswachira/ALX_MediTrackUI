@@ -1,0 +1,110 @@
+@media (max-width: 370px),
+(max-width: 514px) {
+  .userprofile {
+    display: none;
+    flex-direction: column;
+  }
+
+  .updateCol {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .register {
+    font-size: x-large;
+  }
+
+  .loginImg {
+    max-width: 100%;
+    display: none;
+  }
+
+  .resetImg {
+    max-width: 100%;
+    display: none;
+  }
+}
+
+@media (max-width: 375px),
+(max-width: 514px) {
+  .userprofile {
+    display: none;
+    flex-direction: column;
+  }
+
+  .updateCol {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .register {
+    font-size: x-large;
+  }
+
+  .loginImg {
+    max-width: 100%;
+    display: none;
+  }
+
+  .resetImg {
+    max-width: 100%;
+    display: none;
+  }
+
+  .registerHeader {
+    font-size: x-large;
+  }
+
+  .loginPage {
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .resetPage {
+    justify-content: center;
+    font-size: larger;
+  }
+
+  .loginHeader>h1 {
+    font-size: xx-large;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
+  .footerIcon {
+    justify-self: center;
+  }
+
+
+}
+
+.updates {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  margin-right: 10px;
+}
+
+
+@media (max-width:767px) {
+  .updates {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    margin-right: 10px;
+  }
+
+  .avatar {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width:639) {
+  .cardy {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
