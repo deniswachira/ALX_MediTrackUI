@@ -5,11 +5,11 @@
   
   3.To clone the repository to your local machine use this command.
   
-    git clone https://github.com/teamAfyaTechs/TeamAfyaTechs-Frontend.git
+    git clone https://github.com/deniswachira/ALX_MediTrackUI.git
   
   4.Navigate to the directory of the cloned repository.use this command 
   
-    cd TeamAfyaTechs-Frontend
+    cd ALX_MediTrackUI
   
   5.Install the dependencies of the project. Use 
   
