@@ -18,6 +18,7 @@ import AddPatient from "./pages/AddPatient";
 import AddPatientMedication from "./pages/AddPatientMedication";
 import GetTagID from "./pages/GetTagID";
 
+
 function App() {
   const { user } = useContext(Context);
   const loginClient = new QueryClient();

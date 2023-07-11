@@ -2,13 +2,10 @@ import React from 'react';
 import UserProfileSidebar from '../components/UserProfileSidebar';
 import '../index.css';
 import { Link } from 'react-router-dom';
-const model_name = 'patients-model4';
 
 
 function Dashboard() {
   const [loadingState, setLoadingState] = React.useState(false);
-  //example
-
   const [userResult, setUserResult] = React.useState(null);
   const [imageUrl, setImageURL] = React.useState();
   const [fileTypeSelectedError, setFileTypeSelectedError] = React.useState();
@@ -30,7 +27,7 @@ function Dashboard() {
   const handleUploadScanImage = (filesArr) => {
     setLoadingState(true);
     var myHeaders = new Headers();
-    myHeaders.append('Prediction-Key', '344bec173fd84a2dba415152888ad7a9');
+    myHeaders.append('Prediction-Key', import.meta.env.VITE_API_KEY);
 
     var formdata = new FormData();
     formdata.append('data', filesArr[0], filesArr[0].name);
@@ -43,7 +40,8 @@ function Dashboard() {
     };
 
     fetch(
-      `https://customvisionpatientidentification-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/b59ec2ba-0423-42fb-b75c-7d2b3caa8d1c/classify/iterations/${model_name}/image`,
+      import.meta.env.VITE_API_URL,
+
       requestOptions,
     )
       .then((response) => {
@@ -160,7 +158,6 @@ function Dashboard() {
                           <button className="btn btn-outline btn-success place-self-center "><Link to={`/records/${result.tagId}`}>View</Link></button>
                         </td>
                       </tr>
-
                     );
                   })}
               </tbody>
