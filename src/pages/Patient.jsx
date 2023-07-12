@@ -46,7 +46,7 @@ function Patient() {
                     <div className="stat">
                         <div className="stat-title text-center m-5 font-bold text-success te">Personal Info</div>
                         <div className="text-xl text-primary">Name: <span className="text-info">{patient?.firstName + " " + patient?.lastName}</span></div>
-                        <div className="text-xl text-primary">Age: <span className="text-info">30 yrs</span></div>
+                        <div className="text-xl text-primary">Age: <span className="text-info">40 yrs</span></div>
                         <div className="text-xl text-primary">Email: <span className="text-info">{patient.email}</span></div>
                         <div className="text-xl text-primary">Gender: <span className="text-info">Male</span></div>
                         <div className="text-xl text-primary">Phone: <span className="text-info">{patient.phone}</span></div>
