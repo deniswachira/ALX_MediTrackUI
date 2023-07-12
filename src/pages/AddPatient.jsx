@@ -238,7 +238,7 @@ function AddPatient() {
                             insurance_name: e.target.value,
                           })
                         }
-                        placeholder='Insurance Name'
+                        placeholder='emergencyContactPhone'
                         className='input input-bordered'
                       />
                       {errors.emergencyContactPhone?.type === 'required' && (
