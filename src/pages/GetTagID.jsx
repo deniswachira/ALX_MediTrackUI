@@ -23,7 +23,6 @@ function GetTagID() {
   //id from custom vision API
   const [id, setIdFromVision] = useState('');
   const [loadingRemoteID, setLoadingRemote] = useState(false);
-  console.log(loadingRemoteID);
   const [imgUploadMsg, setImgUploadMsg] = useState('Upload Image');
   const [successMgs, setSuccessMgs] = useState(null);
   const [file, setFile] = useState(null);

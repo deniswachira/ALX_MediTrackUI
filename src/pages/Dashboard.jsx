@@ -27,7 +27,7 @@ function Dashboard() {
   const handleUploadScanImage = (filesArr) => {
     setLoadingState(true);
     var myHeaders = new Headers();
-    myHeaders.append('Prediction-Key', import.meta.env.VITE_API_KEY);
+    myHeaders.append('Prediction-Key', '63031bf1fbd0487ebc25faa743ab6c3d');
 
     var formdata = new FormData();
     formdata.append('data', filesArr[0], filesArr[0].name);
@@ -40,7 +40,7 @@ function Dashboard() {
     };
 
     fetch(
-      import.meta.env.VITE_API_URL,
+      'https://eastus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/d94560a6-5ce2-4462-a4b5-d3f3fde6bf2b/classify/iterations/Iteration2/image',
 
       requestOptions,
     )
